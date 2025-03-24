@@ -47,25 +47,25 @@ This project extracts, summarizes, and analyzes **news articles** related to a g
 
 ## 🔧 Installation & Setup
 ### 1️⃣ Clone the Repository
-\`\`\`sh
+\`\`\`bash
 git clone https://github.com/yourusername/News-Summarization-TTS.git
 cd News-Summarization-TTS
 \`\`\`
 
 ### 2️⃣ Create a Virtual Environment (Optional)
-\`\`\`sh
+\`\`\`bash
 python -m venv venv
 source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate  # Windows
 \`\`\`
 
 ### 3️⃣ Install Dependencies
-\`\`\`sh
+\`\`\`bash
 pip install -r requirements.txt
 \`\`\`
 
 ### 4️⃣ Download Required NLP Models
-\`\`\`sh
+\`\`\`bash
 python -m spacy download en_core_web_sm
 \`\`\`
 
@@ -73,13 +73,13 @@ python -m spacy download en_core_web_sm
 
 ## 🚀 Running the Application
 ### 1️⃣ Start the FastAPI Backend
-\`\`\`sh
+\`\`\`bash
 uvicorn api:app --reload
 \`\`\`
 📌 Visit API Docs: \`http://127.0.0.1:8000/docs\`
 
 ### 2️⃣ Run the Streamlit Web App
-\`\`\`sh
+\`\`\`bash
 streamlit run app.py
 \`\`\`
 📌 Visit Web App: \`http://localhost:8501\`
