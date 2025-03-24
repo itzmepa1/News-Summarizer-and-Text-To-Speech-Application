@@ -133,9 +133,9 @@ streamlit run app.py
 ---
 
 ## 📌 Contributors
-👨‍💻 **Your Name** – Developer & Maintainer  
+👨‍💻 **Your Name** – Pavan N
 
-📩 **Contact:** [your.email@example.com]  
+📩 **Contact:** pavankumarnmv331@gmail.com 
 
 🚀 **GitHub:** [GitHub Repository](https://github.com/yourusername/News-Summarization-TTS)  
 🚀 **Hugging Face:** [Hugging Face Space](https://huggingface.co/spaces/yourspace/news-summarizer)  
