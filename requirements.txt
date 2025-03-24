@@ -1,0 +1,12 @@
+streamlit
+fastapi
+uvicorn
+requests
+beautifulsoup4
+textblob
+gtts
+spacy
+torch
+newspaper3k
+transformers
+deep-translator
