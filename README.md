@@ -33,7 +33,7 @@ This project extracts, summarizes, and analyzes **news articles** related to a g
 ---
 
 ## 📂 Project Structure
-\`\`\`
+```
 📂 News-Summarization-TTS
 ├── 📜 app.py           # Streamlit Web UI
 ├── 📜 api.py           # FastAPI Backend
@@ -41,47 +41,47 @@ This project extracts, summarizes, and analyzes **news articles** related to a g
 ├── 📜 requirements.txt # Required Dependencies
 ├── 📜 README.md        # Project Documentation
 └── 📂 static/          # Folder for Audio Storage
-\`\`\`
+```
 
 ---
 
 ## 🔧 Installation & Setup
 ### 1️⃣ Clone the Repository
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/News-Summarization-TTS.git
 cd News-Summarization-TTS
-\`\`\`
+```
 
 ### 2️⃣ Create a Virtual Environment (Optional)
-\`\`\`bash
+```bash
 python -m venv venv
 source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate  # Windows
-\`\`\`
+```
 
 ### 3️⃣ Install Dependencies
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 4️⃣ Download Required NLP Models
-\`\`\`bash
+```bash
 python -m spacy download en_core_web_sm
-\`\`\`
+```
 
 ---
 
 ## 🚀 Running the Application
 ### 1️⃣ Start the FastAPI Backend
-\`\`\`bash
+```bash
 uvicorn api:app --reload
-\`\`\`
+```
 📌 Visit API Docs: \`http://127.0.0.1:8000/docs\`
 
 ### 2️⃣ Run the Streamlit Web App
-\`\`\`bash
+```bash
 streamlit run app.py
-\`\`\`
+```
 📌 Visit Web App: \`http://localhost:8501\`
 
 ---
@@ -94,7 +94,7 @@ streamlit run app.py
 ---
 
 ## 🎙️ Example Output (JSON)
-\`\`\`json
+```json
 {
     "Company": "Tesla",
     "Articles": [
@@ -119,7 +119,7 @@ streamlit run app.py
     "Final Sentiment Analysis": "Tesla has received mostly positive media coverage.",
     "Audio": "static/output.mp3"
 }
-\`\`\`
+```
 
 ---
 
@@ -137,7 +137,7 @@ streamlit run app.py
 
 📩 **Contact:** pavankumarnmv331@gmail.com 
 
-🚀 **GitHub:** [GitHub Repository](https://github.com/yourusername/News-Summarization-TTS)  
+🚀 **GitHub:** [GitHub Repository](https://github.com/itzmepa1/News-Summarizer-and-Text-To-Speech-Application)  
 🚀 **Hugging Face:** [Hugging Face Space](https://huggingface.co/spaces/PaOne20/news_summarizer_and_tts_app)  
 
 ---
