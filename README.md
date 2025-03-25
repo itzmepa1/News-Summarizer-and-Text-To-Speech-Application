@@ -138,7 +138,7 @@ streamlit run app.py
 📩 **Contact:** pavankumarnmv331@gmail.com 
 
 🚀 **GitHub:** [GitHub Repository](https://github.com/yourusername/News-Summarization-TTS)  
-🚀 **Hugging Face:** [Hugging Face Space](https://huggingface.co/spaces/yourspace/news-summarizer)  
+🚀 **Hugging Face:** [Hugging Face Space]((https://huggingface.co/spaces/PaOne20/news_summarizer_and_tts_app))  
 
 ---
 
