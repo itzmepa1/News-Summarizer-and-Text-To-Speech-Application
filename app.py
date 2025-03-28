@@ -19,7 +19,7 @@ def main():
                 sentiment_report = articles.get("Final Sentiment Analysis", "No sentiment summary available.")
                 speech_file = text_to_speech(sentiment_report)
 
-                # ✅ **Play button for Hindi TTS**
+                # **Play button for Hindi TTS**
                 st.subheader("🎙️ Hindi Sentiment Summary (TTS)")
                 
                 if speech_file and os.path.exists(speech_file):
@@ -32,7 +32,7 @@ def main():
                         mime="audio/mp3"
                     )
                 else:
-                    st.error("⚠️ Audio could not be generated.")
+                    st.error("Audio could not be generated.")
 
             else:
                 st.error("No articles found or an error occurred.")
