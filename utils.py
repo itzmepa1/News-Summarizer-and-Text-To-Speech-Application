@@ -6,8 +6,8 @@ import os
 import json
 import spacy
 import torch
-from newspaper import Article  # Install with: pip install newspaper3k
-from transformers import pipeline  # Alternative summarization method
+from newspaper import Article  
+from transformers import pipeline 
 from deep_translator import GoogleTranslator
 # Load spaCy model for topic extraction
 nlp = spacy.load("en_core_web_sm")
@@ -92,19 +92,19 @@ def comparative_analysis(articles):
     for article in articles:
         sentiment_distribution[article["Sentiment"]] += 1
 
-    # ✅ Fix: Ensure Common Topics are correctly extracted
+    # Ensure Common Topics are correctly extracted
     if len(topic_sets) > 1:
         common_topics = sorted(set.intersection(*topic_sets))  # Find shared topics across all articles
     else:
         common_topics = []  # If only one article, no common topics exist
 
-    # ✅ Fix: Format Unique Topics Properly
+    # Format Unique Topics Properly
     unique_topics = {
         f"Unique Topics in Article {i+1}": sorted(list(topic_sets[i] - set(common_topics)))
         for i in range(len(topic_sets))
     }
 
-    # ✅ Compare coverage differences properly
+    # Compare coverage differences properly
     coverage_differences = [
         {
             "Comparison": f"Article {i+1} discusses {articles[i]['Title']}, while Article {i+2} covers {articles[i+1]['Title']}.",
@@ -145,26 +145,26 @@ def text_to_speech(text, filename="static/output.mp3"):
     filepath = os.path.join("static", filename)
 
     try:
-        # ✅ Translate English to Hindi
+        # Translate English to Hindi
         hindi_text = GoogleTranslator(source='auto', target='hi').translate(text)
         if not hindi_text.strip():
             raise ValueError("Translated text is empty!")
 
         print(f"🔹 Hindi Text: {hindi_text}")  # Debugging log
 
-        # ✅ Generate speech
+        # Generate speech
         tts = gTTS(text=hindi_text, lang="hi", slow=False)
         tts.save(filepath)
 
-        # ✅ Verify if the file is actually created
+        # Verify if the file is actually created
         if not os.path.exists(filepath):
             raise FileNotFoundError(f"Audio file not created at {filepath}")
 
-        print(f"✅ Audio generated successfully: {filepath}")
+        print(f"Audio generated successfully: {filepath}")
         return filepath
 
     except Exception as e:
-        print(f"⚠️ Error generating speech: {e}")
+        print(f"Error generating speech: {e}")
         return None
 
 def process_news(company_name):
